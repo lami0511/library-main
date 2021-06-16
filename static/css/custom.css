@@ -1,0 +1,9 @@
+#book-list .card-body {
+    padding: 5pt;
+    font-size: 11pt;
+}
+
+#book-detail img {
+    box-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.3);
+    width: 100%;
+}

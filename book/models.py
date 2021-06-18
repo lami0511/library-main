@@ -13,7 +13,7 @@
 
 # 設備
 class Book(Model):
-    title = CharField('設備編號', max_length=255)
+    title = CharField('教室編號', max_length=255)
     author = CharField('型號', max_length=255)
     publisher = CharField('財產編號', max_length=255)
     note = CharField('備註', max_length=255)

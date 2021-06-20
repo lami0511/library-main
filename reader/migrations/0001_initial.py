@@ -15,12 +15,12 @@ class Migration(migrations.Migration):
             name='Reader',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('realname', models.CharField(max_length=32, verbose_name='身分')),
+                ('realname', models.CharField(max_length=32, verbose_name='單位處室')),
                 ('teacher_type', models.CharField(max_length=255, verbose_name='聯絡電話')),
                 ('tel', models.CharField(max_length=255, verbose_name='聯絡電話')),
                 ('email', models.EmailField(max_length=254, verbose_name='電子信箱')),
                 ('titleclass', models.CharField(max_length=255, verbose_name='職稱/任教科目')),
-                ('status', models.CharField(max_length=255, verbose_name='狀態')),
+                ('status', models.CharField(max_length=255, verbose_name='教室名稱')),
             ],
         ),
     ]

@@ -3,10 +3,10 @@
 {% block content %}
 <div class="mb-1">
   <a href="{% url 'checkout_reader' %}" class="btn btn-sm btn-primary">
-    <i class="fas fa-address-book"></i> 借設備
+    <i class="fas fa-address-book"></i> 借閱教室
   </a>
   <a href="{% url 'return_book' %}" class="btn btn-sm btn-primary">
-    <i class="fas fa-undo"></i> 還設備
+    <i class="fas fa-undo"></i> 歸還教室
   </a>
 </div>
 <div id="log-list">
@@ -14,7 +14,7 @@
     <thead>
       <tr>
         <th>借出日期</th>
-        <th>設備編號</th>
+        <th>教室名稱</th>
         <th>借用人</th>
         <th>歸還日期</th>
       </tr>

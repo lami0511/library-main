@@ -13,9 +13,9 @@
 
 # 設備
 class Book(Model):
-    title = CharField('設備編號', max_length=255)
-    author = CharField('型號', max_length=255)
-    publisher = CharField('財產編號', max_length=255)
+    title = CharField('教室名稱', max_length=255)
+    author = CharField('教室簡介', max_length=255)
+    publisher = CharField('相關規定', max_length=255)
     note = CharField('備註', max_length=255)
     preface = ImageField('圖片')
 

@@ -5,17 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
-    <title>設備借用管理系統</title>
+    <title>教室借用管理系統</title>
   </head>
   <body>
+    <body background="https://scontent.ftpe1-3.fna.fbcdn.net/v/t1.6435-9/p960x960/201499167_1206960459762892_2455020082396533283_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=-coTHI9yORQAX-ER408&_nc_ht=scontent.ftpe1-3.fna&tp=6&oh=b5c66a63d47d52fdbed30807bfdd7b96&oe=60D32077"></body>
     <div class="container">
       {% include "navbar.html" %}
       <div class="main-content">
         {% block content %}{% endblock %}
       </div>
+      <center>
+      <dd><h5>~歡迎光臨教室借用管理系統~</h5></dd>
+      </center>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -23,5 +27,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     {% block footer_script %}{% endblock %}
+    
   </body>
 </html>
